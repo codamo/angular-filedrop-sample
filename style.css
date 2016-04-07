@@ -1,0 +1,7 @@
+#dropArea {
+  height: 100px;
+  width: 200px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid lightgray;
+}

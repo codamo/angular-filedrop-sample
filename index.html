@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>filedrop</title>
+    <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" charset="utf-8">
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="fileDropCtrl">
+      <div id="dropArea" ng-drop="drop($event)" ng-dragover="dragOver($event)">
+        Drop file here
+      </div>
+      <ul ng-repeat="fileName in fileNames track by $index">
+        <li>{{fileName}}</li>
+      </ul>
+    </div>
+  </body>
+</html>
